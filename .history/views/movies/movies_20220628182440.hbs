@@ -1,0 +1,15 @@
+<h2>Available movies</h2>
+<div>
+  <ul>
+    {{#each response}}
+
+      <li>{{this.name}}</li>
+      <li>{{this.genre}}</li>
+      <li>{{this.plot}}</li>
+      <li>{{this.cast.name}}</li>
+      <br />
+      <a href="/drones/{{_id}}/edit">Edit</a>
+      <button type="submit">Delete</button>
+
+    {{/each}}
+  </ul></div>

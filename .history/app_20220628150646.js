@@ -31,7 +31,6 @@ const celebritiesRoutes = require("./routes/celebrities.routes");
 const moviesRoutes = require("./routes/movies.routes");
 app.use("/", index);
 app.use("/", celebritiesRoutes);
-app.use("/", moviesRoutes);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);

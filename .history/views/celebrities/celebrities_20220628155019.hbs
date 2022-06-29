@@ -1,0 +1,14 @@
+<h2>Available drones</h2>
+<div>
+  <ul>
+    {{#each response}}
+
+      <li>{{this.name}}</li>
+      <li>{{this.occupation}}</li>
+      <li>{{this.catchphrase}}</li>
+      <br />
+      <a href="/drones/{{_id}}/edit">Edit</a>
+      <button type="submit">Delete</button>
+
+    {{/each}}
+  </ul></div>

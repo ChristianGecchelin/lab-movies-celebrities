@@ -1,0 +1,8 @@
+<h2>{{response.name}}</h2>
+<p>Género: {{response.genre}}</p>
+<p>Plot:{{response.plot}}</p>
+<p>Cast:{{#each response.cast}}
+    {{this.name}}<br />
+    {{this.occupation}}<br />
+    {{this.catchPhrase}}
+  {{/each}}</p>
